@@ -9,8 +9,8 @@ int _print_S(va_list S)
 {
 	unsigned int i;
 	int counter = 0;
-	char *string; 
-	
+	char *string;
+
 	string = va_arg(S, char *);
 
 	if (string == NULL)
@@ -35,3 +35,4 @@ int _print_S(va_list S)
 	}
 	return (counter);
 }
+

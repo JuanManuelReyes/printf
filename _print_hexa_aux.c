@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- *_print_hexa - Function that prints a number in Hexa.
+ *_print_hexa_aux - Function that prints a number in Hexa.
  *@n: Number that will be printed in Hexa.
- *@c: This variable set the case of the output (0 =LowerCase and 1 =UpperCase).
  *Return: Char quantity.
  **/
 int _print_hexa_aux(unsigned long n)
@@ -30,7 +29,7 @@ int _print_hexa_aux(unsigned long n)
 		i++;
 		n = n / 16;
 	}
-	
+
 	for (i = i - 1; i >= 0; i--)
 	{
 		_putchar(hexas[i]);
@@ -38,3 +37,4 @@ int _print_hexa_aux(unsigned long n)
 	}
 	return (counter);
 }
+

@@ -15,3 +15,4 @@ int _print_c(va_list c)
 
 	return (1);
 }
+
