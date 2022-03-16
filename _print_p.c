@@ -12,7 +12,7 @@ int _print_p(va_list p)
 
 	if (i == 0)
 	{
-		return (_printf("(null)"));
+		return (_printf("(nil)"));
 	}
 
 	count += _putchar('0');
