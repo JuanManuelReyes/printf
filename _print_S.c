@@ -8,6 +8,7 @@
 int _print_S(va_list S)
 {
 	unsigned int i;
+	unsigned long b;
 	int counter = 0;
 	char *string;
 
@@ -23,10 +24,13 @@ int _print_S(va_list S)
 			_putchar('\\');
 			_putchar('x');
 			counter += 4;
+
 			if (string[i] < 16)
-			       _putchar('0');
-	
-			_print_hexa_aux(string[i]);
+			{
+				_putchar('0');
+			}
+			b = (unsigned long)string[i];
+			_print_hexa_aux(b);
 		}
 		else
 		{
