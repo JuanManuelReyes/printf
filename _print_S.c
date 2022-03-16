@@ -18,12 +18,15 @@ int _print_S(va_list S)
 
 	while (string[i] != '\0')
 	{
-		if (string[i] < 32 || string[i] >= 127)
+		if ((string[i] < 32 && string[i] > 0) || string[i] >= 127)
 		{
 			_putchar('\\');
 			_putchar('x');
-			counter += 2;
-			counter += _print_hexa_aux(string[i]);
+			counter += 4;
+			if (string[i] < 16)
+			       _putchar('0');
+	
+			_print_hexa_aux(string[i]);
 		}
 		else
 		{
