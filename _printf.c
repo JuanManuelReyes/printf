@@ -22,6 +22,7 @@ int (*validation(char *format))(va_list)
 		{"X", _print_X},
 		{"o", _print_o},
 		{"p", _print_p},
+		{"S", _print_S},
 		{NULL, NULL}
 	};
 

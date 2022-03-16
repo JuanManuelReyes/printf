@@ -50,6 +50,8 @@ Flags
             used only for negative numbers.  A + overrides a space if
             both are used.
 
+
+
 Conversion specifiers
 	
 	Is a character followed after the % character that specifies the type of 
