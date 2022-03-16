@@ -12,12 +12,12 @@ int _print_p(va_list p)
 
 	if (i == 0)
 	{
-		return (_printf("(nil)"));
+		return (_printf("(null)"));
 	}
 
 	count += _putchar('0');
 	count += _putchar('x');
-	count += _print_hexa(i, 0);
+	count += _print_hexa_aux(i);
 	return (count);
 }
 
