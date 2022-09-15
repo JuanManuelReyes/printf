@@ -54,16 +54,20 @@ int _printf(const char *, ...);
 - [x] Handle the custom conversion specifier R that prints the rot13'ed string.
 - [ ] All above options should work well together.
  
-  ### **File Descriptions**
-_printf.c: - contains the fucntion _printf, which uses the prototype int _printf(const char *format, ...);. The format string is composed of zero or more directives. See man 3 printf for more detail. _printf will return the number of characters printed (excluding the null byte used to end output to strings) and will write output to stdout, the standard output stream.
-_putchar.c: - contains the function _putchar, which writes a character to stdout.
-main.h: - contains all function prototypes used for _printf.
-man_3_printf: - manual page for the custom _printf function.
-print_chars.c: - contains the functions print_c, print_s, print_S, and print_r which handle the conversion specifiers c, s, S, and r, respectively, as well as hex_print, which prints a char's ascii value in uppercase hex
-_print_numbers.c: - contains the functions print_i and print_d, which handle the conversion specifiers i and d, respectively
-_print_hex.c: - contains the functions print_hex, which prints an unsigned int in hexidecimal form, print_x, print_X, and _print_p, which handle the conversion specifiers x, X, and p, respectively
-print_unsigned_int.c: - contains the functions print_u, print_o, and print_b, which handle the conversion specifiers u, o, and b, respectively
-_print_rot13.c - contains the function print_R, which handles the conversion specifier R
+
+### Files
+
+| File |  Description  |
+|------|---------------|
+| _printf.c | Contains the fucntion _printf, which uses the prototype int _printf(const char *format, ...);.  The format string is composed of zero or more directives. See man 3 printf for more detail.  _printf will return the number of characters printed (excluding the null byte used to end output to strings) and will write output to stdout, the standard output stream.  |
+|_putchar.c|Contains the function _putchar, which writes a character to stdout. |
+|main.h|Contains all function prototypes used for _printf. |
+|man_3_printf|Manual page for the custom _printf function. |
+|print_chars.c|Contains the functions print_c, print_s, print_S, and print_r which handle the conversion specifiers c, s, S, and r, respectively, as well as hex_print, which prints a char's ascii value in uppercase hex. |
+|_print_numbers.c|Contains the functions print_i and print_d, which handle the conversion specifiers i and d, respectively. |
+|_print_hex.c|Contains the functions print_hex, which prints an unsigned int in hexidecimal form, print_x, print_X, and _print_p, which handle the conversion specifiers x, X, and p, respectively. |
+|print_unsigned_int.c|Contains the functions print_u, print_o, and print_b, which handle the conversion specifiers u, o, and b, respectively.|
+|_print_rot13.c|Contains the function print_R, which handles the conversion specifier R.|
 
 ### **By:**
 #### [Franco Trenche](https://www.linkedin.com/in/franco-trenche-375a33209/)
